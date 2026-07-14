@@ -22,8 +22,8 @@ window.addEventListener('load', () => {
   if (loader) {
     setTimeout(() => {
       loader.classList.add('hidden');
-       document.documentElement.style.overflow = '';
-      document.body.style.overflow = '';
+       document.documentElement.style.overflow = 'auto';
+      document.body.style.overflow = 'auto';
     }, 700);
   }
 });
