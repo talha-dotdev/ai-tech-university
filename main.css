@@ -80,7 +80,9 @@ h2::after {
 }
 h3 { font-size: clamp(1.15rem, 2.4vw, 1.4rem); }
 h4 { font-size: 1.05rem; }
-
+.site-header{
+    padding-top:70px;
+}
 main, .site-form, footer, section, .cta-band { padding-left: 6vw; padding-right: 6vw; }
 main { max-width: 1200px; margin: 0 auto; padding-top: 2rem; padding-bottom: 3rem; }
 main > p, main > ul, main > ol { max-width: 900px; }
@@ -137,7 +139,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* ---------- Header / Navbar ---------- */
 .site-header { background: var(--navy); color: var(--white); }
 .navbar {
-  position: sticky; top: 0; z-index: 1000;
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background: rgba(10, 27, 61, 0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
