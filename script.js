@@ -22,10 +22,12 @@ window.addEventListener('load', () => {
   if (loader) {
     setTimeout(() => {
       loader.classList.add('hidden');
+       document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
     }, 700);
   }
 });
+document.documentElement.style.overflow = 'hidden';
 document.body.style.overflow = 'hidden';
 
 window.addEventListener('scroll', () => {
